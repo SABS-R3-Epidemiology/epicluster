@@ -31,4 +31,4 @@ Epidemics 29: 100356.
 
 [3]
 Creswell R, Augustin D, Bouros I, Farm HJ, Miao S, Ahern A, Robinson M, Lemenuel-Diot A,
-Gavaghan DJ, Lambert B, Thompson RN (2022). Heterogeneity in the onwards tranmission risk between local and imported cases affects practical estimates of the time-dependent reproduction number. Philosophical Transactions of the Royal Society B (forthcoming).
+Gavaghan DJ, Lambert B, Thompson RN (2022). Heterogeneity in the onwards tranmission risk between local and imported cases affects practical estimates of the time-dependent reproduction number. Philosophical Transactions of the Royal Society A (forthcoming).
