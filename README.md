@@ -2,7 +2,7 @@
 
 ## Installation
 
-The package is installable via `pip`:
+Local copies of the package files are installable via `pip`:
 
 ```bash
 pip install -e .
