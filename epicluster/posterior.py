@@ -46,8 +46,13 @@ class MCMCSampler:
 
         T = len(self.models[0].assignments)
         if Rhat_thresh != 0:
-            self.models[0].set_initial_blocks(T, 1)
-            self.models[-1].set_initial_blocks(T, T)
+            # Set the first half of the chains to start at 1 block
+            # Set the second half of the chains to start at T blocks
+            num_chains = len(self.models)
+            for i in range(num_chains//2):
+                self.models[i].set_initial_blocks(T, 1)
+            for i in range(num_chains//2, num_chains):
+                self.models[i].set_initial_blocks(T, T)
 
         params_chain = []
         assign_chain = []
@@ -73,7 +78,7 @@ class MCMCSampler:
                     print('Converged', iter, rhat)
                     break
 
-        # return the first chain
-        return [x[0] for x in params_chain], \
-               [x[0] for x in assign_chain], \
-               [len(set(x[0])) for x in assign_chain]
+        # return all chains
+        return [z for x in params_chain for z in x], \
+               [z for x in assign_chain for z in x], \
+               [len(set(z)) for x in assign_chain for z in x]
