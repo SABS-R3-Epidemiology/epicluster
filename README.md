@@ -10,9 +10,9 @@ pip install -e .
 
 ## Usage
 
-See the examples directory for a notebook performing inference.
+See the examples directory for a simple notebook performing inference. 
 
-See also the results repository for examples of all the features of the package.
+The results repository (https://github.com/SABS-R3-Epidemiology/epicluster-results) contains multiple examples illustrating the full functionality of the package.
 
 
 ## References
