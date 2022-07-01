@@ -45,18 +45,18 @@ class TestPosterior(unittest.TestCase):
         params_chain, assign_chain, clusters_chain = \
             sampler.run_mcmc(num_mcmc_samples=5)
 
-        self.assertEqual(len(params_chain), 5)
-        self.assertEqual(len(assign_chain), 5)
-        self.assertEqual(len(clusters_chain), 5)
+        self.assertEqual(len(params_chain), 10)
+        self.assertEqual(len(assign_chain), 10)
+        self.assertEqual(len(clusters_chain), 10)
 
         # Check with an Rhat threshold (though it will hit the max_mcmc here)
         params_chain, assign_chain, clusters_chain = \
             sampler.run_mcmc(Rhat_thresh=1.01,
                              max_mcmc=5)
 
-        self.assertEqual(len(params_chain), 5)
-        self.assertEqual(len(assign_chain), 5)
-        self.assertEqual(len(clusters_chain), 5)
+        self.assertEqual(len(params_chain), 10)
+        self.assertEqual(len(assign_chain), 10)
+        self.assertEqual(len(clusters_chain), 10)
 
 
 if __name__ == '__main__':
