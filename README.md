@@ -1,5 +1,7 @@
 # epicluster
 
+This repository contains a Python package that can be used to estimate changes in the time-varying reproduction number from time series of cases. The statistical model is from the field of Bayesian nonparametrics, and results from using this package are given in [Creswell et al., 2022, "A Bayesian nonparametric method for detecting rapid changes in disease transmission", Journal of Theoretical Biology](https://www.sciencedirect.com/science/article/pii/S0022519322003423).
+
 ## Installation
 
 Local copies of the package files are installable via `pip`:
